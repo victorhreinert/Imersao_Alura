@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spotify Imersão</title>
+
+    <!-- resetar CSS -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- arquivo principal do CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- fontes e icones Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+        integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <!--Barra Lateral Principal -->
+    <div class="sidebar">
+        <!-- Container da Barra de Navegação -->
+        <nav class="sidebar__navigation">
+
+            <!--Container da Logo Separada-->
+            <div class="logo">
+                <a href=""> <img src="assets/icons/logo-spotify.png" alt="logo-spotify"></a>
+            </div>
+            <!-- Container dos Widgets (ul li a) - Home e Início -->
+            <div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-home"> </span>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-search"> </span>
+                            <span> Buscar </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="library">
+            <div class="library__content">
+                <button class="library__button">
+                    <span class="fa fas fa-book"></span>
+                    <span>Sua bibloteca</span>
+                </button>
+                <span class="fa fa-plus"></span>
+
+            </div>
+
+            <section class="section-playlist">
+                <div class="section-playlist__content">
+                    <span class="text title">Crie sua primeira playlist</span>
+                    <span class="text subtitle">É fácil, vamos te ajudar. </span>
+                    <button class="section-playlist__button">Criar Playlist</button>
+                </div>
+            </section>
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+            <div class="languages">
+                <button class="languages__button">
+                    <span class="fa fa-globe"> </span>
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-section">
+        <section class="footer-section__content">
+
+            <span class="ftitle">TESTAR O PREMIUM DE GRAÇA</span>
+            <p class="ftext">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de
+                cartão de crédito. </p>
+
+        </section>
+
+        <button class="footer-section__button">Inscreva-se grátis</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
