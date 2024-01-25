@@ -9,8 +9,13 @@
 
     <!-- resetar CSS -->
     <link rel="stylesheet" href="styles/reset.css">
+    <!-- root -->
+    <link rel="stylesheet" href="/styles/vars.css">
     <!-- arquivo principal do CSS -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/sidebar-footer.css">
+    <!-- header -->
+    <link rel="stylesheet" href="styles/main-content.css">
+
     <!-- fontes e icones Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
@@ -64,9 +69,33 @@
                     <button class="section-playlist__button">Criar Playlist</button>
                 </div>
             </section>
-            <div class="cookies">
-                <a href="">Cookies</a>
-            </div>
+            <section class="section-podcast">
+                <div class="section-podcast__content">
+                    <span class="text title">Que tal seguir um podcast novo?</span>
+                    <span class="text subtitle">Avisaremos voce sobre novos episódios.</span>
+                    <button class="section-podcast__button">Explorer podcasts</button>
+                </div>
+            </section>
+            <section class="legal-content">
+                <div class="legal-widgets">
+                    <a href="">Legal</a> <a href="">Centro de Privacidade</a>
+                </div>
+                <div class="privacy-policy-widgets">
+                    <a href="">Política de Privacidade</a>
+                    <a href="">Cookies</a>
+                    <a href="">Sobre Anúncios</a>
+                </div>
+                <div class="accessibility-widgets">
+                    <a href="">Acessibilidade</a>
+                    <a href="">Notice at Collection</a>
+                </div>
+                <div class="cookie-settings-widgets">
+                    <a href="">Definições de Cookies</a>
+                </div>
+                <div class="more-cookies">
+                    <a href="">Mais sobre Cookies</a>
+                </div>
+            </section>
             <div class="languages">
                 <button class="languages__button">
                     <span class="fa fa-globe"> </span>
@@ -75,6 +104,55 @@
             </div>
         </div>
     </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="assets/icons/small-left.png" alt="Seta Esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="assets/icons/small-right.png" alt="Seta Direita">
+                    </button>
+
+                    <div class="header__search">
+                        <img src="assets/icons/search.png" alt="">
+                        <input id="search-input" type="text" maxlength="800" autocorrect="off" autocapitalize="off"
+                            spellcheck="false" placeholder="O que você quer ouvir?" value="" />
+                    </div>
+                </div>
+
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+
+            <div class="playlist-container">
+                <div id="result-playlists">
+                    <div class="playlist">
+                        <!-- COLOCAR O BOM DIA | BOA TARDE | BOA NOITE -->
+                        <h1 id="greeting">BOM DIA | BOA TARDE | BOA NOITE </h1>
+                        <h2 class="session">Navegar por todas as seções</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- div estava aqui -->
+
+
+    </main>
+
+
+
+
+
+
+
+
+
     <footer class="footer-section">
         <section class="footer-section__content">
 
