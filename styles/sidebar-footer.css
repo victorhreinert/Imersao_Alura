@@ -38,7 +38,7 @@ h1 {
 }
 
 .sidebar__navigation ul li a:hover {
-    color: #fff;
+    color: var(--spotify-color);
     /* Altera a cor ao passar o mouse */
 }
 
@@ -134,7 +134,7 @@ h1 {
 }
 
 .library .library__button:hover {
-    color: #fff;
+    color: var(--spotify-color);
 }
 
 .library .library__content .fa {
@@ -150,13 +150,18 @@ h1 {
 }
 
 .library .library__content .fa-plus:hover {
-    color: #fff;
+    color: var(--spotify-color);
     transform: scale(1.1);
 }
 
+.section-activities.hidden{
+    display: none;
+}
 .section-playlist,
-.section-podcast {
+.section-podcast,
+.section-activities {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
@@ -167,33 +172,42 @@ h1 {
     margin: 8px 0px;
     padding: 16px 20px;
     border-radius: 10px;
+    max-height: 300px;
+    /* Ajuste este valor conforme necessário */
+    min-height: 100px;
+    /* Adicione este valor para definir a altura mínima */
 }
 
 .section-playlist .section-playlist__content,
-.section-podcast .section-podcast__content {
+.section-podcast .section-podcast__content,
+.section-activities .section-activities__content {
     display: flex;
     flex-direction: column;
 }
 
 .section-playlist__content .text,
-.section-podcast__content .text {
+.section-podcast__content .text,
+.section-activities__content .text {
     padding-bottom: 14px;
     color: #fff;
 }
 
 .section-playlist__content .title,
-.section-podcast__content .title {
+.section-podcast__content .title,
+.section-activities__content .title {
     font-weight: 700;
 }
 
 .section-playlist__content .subtitle,
-.section-podcast__content .subtitle {
+.section-podcast__content .subtitle,
+.section-activities__content .subtitle {
     font-weight: 500;
     font-size: 12px;
 }
 
 .section-playlist__content .section-playlist__button,
-.section-podcast__content .section-podcast__button {
+.section-podcast__content .section-podcast__button,
+.section-activities__content .section-activities__button {
     background-color: #fff;
     color: #000;
     border-radius: 20px;
@@ -209,8 +223,21 @@ h1 {
 }
 
 .section-playlist__content .section-playlist__button:hover,
-.section-podcast__content .section-podcast__button:hover {
+.section-podcast__content .section-podcast__button:hover,
+.section-activities__content .section-activities__button:hover {
     transform: scale(1.1);
+    background-color: var(--spotify-color);
+    ;
+}
+
+.section-playlist,
+.section-podcast,
+.section-activities {
+    margin-bottom: 15px;
+}
+
+.section-activities {
+    margin-bottom: 10px;
 }
 
 
@@ -219,43 +246,60 @@ h1 {
 
 /* ----------------------- */
 
-.sidebar .legal-widgets {
-    padding-top: 26px;
+.sidebar .legal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.sidebar .more-cookies {
+.widget-container.legal-widget a:nth-child(2) {
+    padding-left: 90px;
+}
+
+.widget-container.privacy-policy-widget a:nth-child(2) {
+    /* Seus estilos aqui */
+    padding-left: 15px;
+}
+
+.widget-container.more-cookies-widget a:nth-child(2) {
+    padding-left: 50px;
+}
+
+.sidebar .more-cookies-widget {
     padding-bottom: 16px;
 }
 
-.sidebar .legal-widgets,
-.privacy-policy-widgets,
-.accessibility-widgets,
-.cookie-settings-widgets,
-.more-cookies {
+.sidebar .widget-container {
     margin: 5px 25px;
 }
 
-.sidebar .legal-widgets a,
-.privacy-policy-widgets a,
-.accessibility-widgets a,
-.cookie-settings-widgets a,
-.more-cookies a {
+.sidebar .widget-container a {
     color: #b3b3b3;
     font-weight: 500;
     font-size: 10px;
     text-decoration: none;
-    transform: color 0.3s;
+    transition: color 0.3s;
 }
 
-.sidebar .more-cookies a:hover {
-    text-decoration: underline;
+.widget-container.legal-widget a:nth-child(2) {
+    padding-left: 90px;
 }
 
-.sidebar .legal-widgets a:hover,
-.privacy-policy-widgets a:hover,
-.accessibility-widgets a:hover,
-.cookie-settings-widgets a:hover {
-    color: #fff;
+.widget-container.privacy-policy-widget a:nth-child(2) {
+    /* Seus estilos aqui */
+    padding-left: 15px;
+}
+
+.widget-container.more-cookies-widget a:nth-child(2) {
+    padding-left: 50px;
+}
+
+.sidebar .more-cookies-widget {
+    padding-bottom: 16px;
+}
+
+.sidebar .widget-container a:hover {
+    color: var(--spotify-color);
 }
 
 .languages .languages__button {
@@ -273,7 +317,7 @@ h1 {
 }
 
 .languages .languages__button:hover {
-    color: #fff;
+    color: var(--spotify-color);
     /* Altera a cor ao passar o mouse */
     transform: scale(1.1);
     /* Escala o botão para 110% do tamanho original */

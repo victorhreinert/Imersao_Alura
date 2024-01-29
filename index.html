@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Spotify Imersão</title>
+    <title>Spotify Victor</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon" />
 
     <!-- resetar CSS -->
     <link rel="stylesheet" href="styles/reset.css">
@@ -78,24 +79,26 @@
                     <button class="section-podcast__button">Explorer podcasts</button>
                 </div>
             </section>
+<!--             <section class="section-activities hidden" >
+                <div class="section-activities__content">
+                    <span class="text title">Verifique suas atividades</span>
+                    <span class="text subtitle">Aqui estão as suas últimas atividades.</span>
+                    <button class="section-activities__button">Ver Atividades</button>
+                </div>
+            </section> -->
+
             <section class="legal-content">
-                <div class="legal-widgets">
-                    <a href="">Legal</a> <a href="">Centro de Privacidade</a>
-                </div>
-                <div class="privacy-policy-widgets">
-                    <a href="">Política de Privacidade</a>
+                <div class="widget-container legal-widget">
+                    <a href="">Legal</a>
                     <a href="">Cookies</a>
-                    <a href="">Sobre Anúncios</a>
                 </div>
-                <div class="accessibility-widgets">
+                <div class="widget-container privacy-policy-widget">
+                    <a href="">Centro de Privacidade</a>
+                    <a href="">Política de Privacidade</a>
+                </div>
+                <div class="widget-container more-cookies-widget">
                     <a href="">Acessibilidade</a>
-                    <a href="">Notice at Collection</a>
-                </div>
-                <div class="cookie-settings-widgets">
-                    <a href="">Definições de Cookies</a>
-                </div>
-                <div class="more-cookies">
-                    <a href="">Mais sobre Cookies</a>
+                    <a href="">Sobre Anúncios</a>
                 </div>
             </section>
             <div class="languages">
@@ -135,7 +138,7 @@
                 <div id="result-playlists">
                     <div class="playlist">
                         <!-- COLOCAR O BOM DIA | BOA TARDE | BOA NOITE -->
-                        <h1 id="greeting">Bom Dia</h1>
+                        <h1 id="greeting"></h1>
                         <h2 class="session">Navegar por todas as seções</h2>
                     </div>
 
@@ -293,13 +296,6 @@
     </main>
 
 
-
-
-
-
-
-
-
     <footer class="footer-section">
         <section class="footer-section__content">
 
@@ -313,6 +309,7 @@
     </footer>
 
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="search.js"></script>
 </body>
 
 </html>
