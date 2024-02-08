@@ -39,32 +39,6 @@ Acesse o <a>Website</a> e veja o resultado, aproveite e escute um desses artista
  - Media Queries.
 
 
-### 💾 Rodando localmente
-
-Clone o projeto
-
-```bash
-  git clone git@github.com:victorhreinert/Imersao_Alura.git
-```
-
-Entre no diretório do projeto
-
-```bash
-  cd Imersao_Alura
-```
-
-Instale as dependências
-
-```bash
-  npm install
-```
-
-Inicie o servidor
-
-```bash
-  npm run start
-```
-
 <br>
 
 
