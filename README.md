@@ -2,10 +2,14 @@
 
 # 🎶 SPOTIFY - Imersão Front-End
 
-Desenvolvido um site com base ao proprio SPOTIFY, nas aulas que teve durante os 5 dias da imersão da ALURA, claro eu quis ir mais além e coloquei funcionalidade ao card e assim dando sentido ao site de música! 
+Desenvolvido um site com base ao proprio SPOTIFY, nas aulas que teve durante os 5 dias da imersão da ALURA.
 
 
 ### 🌎 Como ficou?
+
+- __[Site Spotify](https://victorhreinert.github.io/Imersao_Alura/)__ - Acesse Aqui
+
+
 
 Acesse o <a>Website</a> e veja o resultado, aproveite e escute um desses artistas.
 
