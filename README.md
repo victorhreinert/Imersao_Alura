@@ -46,7 +46,7 @@ Clone o projeto
 Entre no diretório do projeto
 
 ```bash
-  cd Spotify-Imersao-Alura
+  cd Imersao_Alura
 ```
 
 Instale as dependências
