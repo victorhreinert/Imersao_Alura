@@ -1,54 +1,201 @@
+/* Estilos para telas menores que 1015px */
 @media screen and (max-width: 1015px) {
-    .header__search {
-      /* display: none !important; */
-      width: auto !important;
-      display: none;
-    }
-  
-    /* .header__login .subscribe {
-      font-size: 12px !important;
-      padding: 10px !important;
-      margin-right: 5px !important;
-    } */
-  
-    /* .offer__list-item {
-      grid-template-columns: 1fr 1fr !important;
-    } */
+  .header__search {
+    width: auto !important;
+    /* Definido como auto para ajuste de largura */
+    display: none;
+    /* Esconder o elemento */
   }
-  
-  @media screen and (min-width: 1016px) and (max-width: 1140px) {
-    .header__search {
-      /* display: none !important; */
-      width: auto !important;
-      display: none;
-    }
-  
-    /* .offer__list-item {
-      grid-template-columns: 1fr 1fr 1fr !important;
-    } */
+
+  .playlist #greeting {
+    color: var(--text-base-light);
+    /* Cor do texto */
+    font-size: 25px;
+    /* Tamanho da fonte */
+    font-weight: 700;
+    /* Peso da fonte */
+    margin-bottom: 20px;
+    /* Margem inferior */
   }
-  
-  @media screen and (max-width: 375px) {
-    .playlist {
+
+  .playlist .session {
+    color: var(--text-base-light);
+    /* Cor do texto */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    font-weight: 700;
+    /* Peso da fonte */
+  }
+
+  .cards span {
+    padding: 19px;
+    /* Preenchimento */
+    position: absolute;
+    /* Posicionamento absoluto */
+    color: var(--text-base-light);
+    /* Cor do texto */
+    font-size: 17px;
+    /* Tamanho da fonte */
+    font-weight: 700;
+    /* Peso da fonte */
+  }
+
+  .offer__list-item {
+    display: grid;
+    /* Exibição em grid */
+    gap: 16px;
+    /* Espaçamento entre as células do grid */
+    grid-gap: 32px;
+    /* Espaçamento entre as células do grid */
+    margin: 0 auto;
+    /* Margem automática nas laterais */
+    justify-items: center;
+    /* Alinhamento horizontal */
+  }
+
+  .cards {
+    position: relative;
+    /* Posicionamento relativo */
+    width: 180px;
+    /* Largura */
+    height: 150px;
+    /* Altura */
+    overflow: hidden;
+    /* Ocultar overflow */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+  }
+
+  .sidebar {
+    position: fixed;
+    /* Posicionamento fixo */
+    top: 0;
+    /* Distância do topo */
+    left: 0;
+    /* Distância da esquerda */
+    bottom: 0;
+    /* Distância do rodapé */
+    padding: 12px;
+    /* Preenchimento */
+    width: 240px;
+    /* Largura */
+  }
+
+  .main-container {
+    max-width: 929vh;
+    /* Largura máxima */
+    height: 127vh;
+    /* Altura */
+    margin-left: 275px;
+    /* Margem à esquerda */
+    margin-right: 0px;
+    /* Margem à direita */
+  }
+
+  .header__login .login {
+    width: 67px;
+    /* Largura */
+    font-size: 14px;
+    /* Tamanho da fonte */
+  }
+
+  .header__login .subscribe {
+    font-size: 14px;
+    /* Tamanho da fonte */
+  }
+}
+
+/* Estilos para telas entre 1016px e 1140px */
+@media screen and (min-width: 1016px) and (max-width: 1140px) {
+  .header__search {
+    width: auto !important;
+    /* Definido como auto para ajuste de largura */
+
+  }
+}
+
+/* Estilos para telas menores que 375px */
+@media screen and (max-width: 375px) {
+  .playlist {
+    display: none;
+    /* Esconder a playlist */
+  }
+
+  .playlist-container {
+    width: 100%;
+    /* Ocupa toda a largura disponível */
+    height: auto;
+    /* Altura automática, ajusta conforme o conteúdo */
+  }
+
+  .sidebar {
+    width: 342px;
+    /* Largura */
+  }
+
+  .offer__list-item {
+    grid-template-columns: 1fr;
+    /* Uma coluna em telas menores */
+  }
+
+  .offer__scroll-container {
+    overflow-y: visible;
+    /* Exibir overflow vertical */
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer-section__button {
+    padding: 7px 15px;
+
+  }
+
+  .footer-section__content {
+    padding: 23px 27px;
+  }
+
+  .library {
+    display: none;
+  }
+
+  .sidebar {
+    width: 180px;
+  }
+
+  .main-container {
+    margin-left: 0px;
+
+  }
+
+  .sidebar {
+    display: none;
+  }
+  .header__search{
+    display: block;
+    width: 200px;
+    height: 36px;
+     }
+     .arrow-left, .arrow-right {
       display: none;
+     }
+}
+
+  @media screen and (max-width: 600px) {
+    p.ftext {
+      display: none;
+
     }
-  
+
+    .footer-section__content {
+      padding: 23px 27px;
+    }
+
     .playlist-container {
-      width: 100%; /* Ocupa toda a largura disponível */
-      height: auto; /* Altura automática, ajusta conforme o conteúdo */
+      height: 73vh;
+      padding-top: 41px;
     }
-  
-    .sidebar {
-      width: 342px;
+    .subscribe{
+      display: none;
     }
-  
-    .offer__list-item {
-      grid-template-columns: 1fr;
-    }
-  
-    .offer__scroll-container {
-      overflow-y: visible;
-    }
-  
   }
-  
